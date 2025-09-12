@@ -1,0 +1,97 @@
+.Reviews {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.Reviews_headline {
+    font-family: "Georgia", serif;
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    font-weight: 800;
+    margin: .25rem 0 2rem;
+}
+
+.Reviews_slider {
+    position: relative;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto 5rem;
+    padding: 0 5rem;  
+}
+
+.Reviews_slide {
+
+    display: grid;
+    gap: 1rem;
+}
+
+.Reviews_label {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.Reviews_stars { 
+    letter-spacing: .25rem; 
+}
+
+.Reviews_review {
+    font-family: sans-serif;
+    color: rgb(73,73,73);
+    font-style: italic;
+    font-size: clamp(1.05rem, 2.4vw, 2rem);
+    line-height: 1.8;
+    letter-spacing: .7px;
+    margin: 0 auto;
+    max-width: 48ch;
+}
+
+.Reviews_author {
+    font-family: sans-serif;
+    color: #9a9a9a;
+    margin-top: .25rem;
+}
+
+/* arrows */
+.Reviews_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: 1px solid #111;
+    background: #fff;
+    color: #111;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.Reviews_nav:hover { background: #111; color: #fff; }
+.Reviews_prev { left: .5rem; }
+.Reviews_next { right: .5rem; }
+
+
+.fade-smooth {
+  animation: fadeInUp .45s cubic-bezier(.2,.7,.3,1);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+.Reviews_button {
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: .9rem 1.8rem;
+    border: 1px solid #111;
+    background: #fff;
+    font-weight: 700;
+    letter-spacing: .06em;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+.Reviews_button:hover { background: #111; color: #fff; }

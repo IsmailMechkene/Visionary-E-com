@@ -1,0 +1,132 @@
+
+
+*,
+*::before,
+*::after { box-sizing: border-box; }  
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;          
+    z-index: 1000;
+}
+
+.header_inner {
+    margin: 0 auto;             
+    padding: 1rem 20rem;             
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+
+main { padding-top: 6.5rem; }
+
+/*.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0,0,0,0));
+    pointer-events: none;
+}*/
+
+.header_logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 10rem;
+}
+
+#visionary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.9rem;
+
+}
+
+#eyewear {
+    color: rgba(0, 0, 0, 0.37);
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.header_div1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%; 
+}
+
+.header_ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    list-style-type: none;
+}
+
+.header_ul p{
+    color: rgb(53, 53, 53);
+    transition: 0.5s ease;
+}
+
+.header_ul p:hover{
+    color: black;
+    transform: scale(1.02);
+    transform-origin: center center;
+}
+.header_link {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: rgb(53, 53, 53);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 0.25rem 0;   
+    transition: 0.3s ease;
+}
+
+.header_link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.header_link:hover::after {
+    width: 100%;
+}
+
+.cart_wrapper {
+    margin-left: 2rem;
+    position: relative;
+}
+
+.header_img {
+    height: 1.3rem;
+}
+
+.login {
+    display: inline-block;  
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;   
+    border: 1px solid black;   
+    font-family: Montserrat, sans-serif;
+    color: black;   
+    background-color: transparent;            
+}

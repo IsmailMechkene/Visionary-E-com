@@ -1,0 +1,116 @@
+.ft {
+    background: #f6f6f6;
+    color: #111;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 15rem;
+}
+
+.ft__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem 2.5rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr; 
+    gap: 3rem;
+}
+
+.ft__brand .ft__logo {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+.ft__brand .ft__tag {
+    margin-top: .25rem;
+    font-family: sans-serif;
+    letter-spacing: .25rem;
+    font-size: .8rem;
+    color: #8d8d8d;
+}
+
+.ft__title {
+    font-family: sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: .25rem 0 1rem;
+}
+
+.ft__col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ft__col li + li { margin-top: .65rem; }
+
+.ft__col a {
+    font-family: sans-serif;
+    color: #222;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+.ft__col a:hover { color: #000; }
+
+.ft__addr {
+    font-family: sans-serif;
+    font-style: normal;
+    color: #444;
+    line-height: 1.7;
+}
+.ft__addr a { color: #222; text-decoration: none; }
+.ft__addr a:hover { text-decoration: underline; }
+
+.ft__bottom {
+    border-top: 1px solid #e6e6e6;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ft__copy {
+    font-family: sans-serif;
+    font-size: .95rem;
+    color: #666;
+}
+
+
+.ft__socials {
+    display: flex;
+    gap: .75rem;
+}
+
+.ft__social {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+    background: #fff;
+    transition: background .2s, border-color .2s;
+}
+
+.ft__social:hover {
+    background: #111;
+    border-color: #111;
+}
+
+.ft__social svg {
+    width: 18px; height: 18px;
+    fill: #111;
+    transition: fill .2s;
+}
+
+.ft__social:hover svg { fill: #fff; }
+
+
+@media (max-width: 960px) {
+  .ft__inner { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  .ft__inner { grid-template-columns: 1fr; }
+  .ft__bottom { flex-direction: column; text-align: center; gap: .75rem; }
+}

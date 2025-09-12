@@ -1,0 +1,67 @@
+
+
+.about {
+    position: relative;
+    height: 65vh;
+    background-color: white;
+}
+
+.about_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.about_images {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3.3rem;
+}
+
+.about_images img {
+    height: 36rem;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_lable {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.about_headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.about_description {
+    font-family: sans-serif;
+    opacity: 70%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 23px;
+}
+
+.about_cta {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: solid 1px black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 13rem;
+    transition: background .2s, color .2s;
+}
+
+.about_cta:hover { 
+    background: #111; 
+    color: #fff; 
+}

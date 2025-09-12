@@ -1,0 +1,51 @@
+
+.home {
+    position: relative;
+    min-height: 110vh;
+    padding: 1rem 20rem;
+    display: flex;
+    align-items: center;
+    background-image: url(backgrounds/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home_container {
+    width: 100%;
+}
+
+.home_tagline {
+    margin-top: 10rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.home_headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 8rem;
+}
+
+.home_description {
+    font-family: sans-serif;
+    opacity: 70%;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 23px;
+}
+
+.home_cta {
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: solid 1px black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+}
+
+.home_cta:hover { 
+    background: #111; 
+    color: #fff; 
+}

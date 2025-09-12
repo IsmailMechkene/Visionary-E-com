@@ -1,0 +1,87 @@
+
+
+.Trending {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(255, 245, 228);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Trending_label {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+
+.Trending_headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Trending_container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.Trending_img_container {
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Trending_img1, .Trending_img2, .Trending_img3  {
+    height: 40rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Trending_img1 img {width: 500px; transition: 0.3s ease;}
+.Trending_img2 img {width: 500px; transition: 0.3s ease;}
+.Trending_img3 img {width: 500px; transition: 0.3s ease;}
+
+.Trending_img1 img:hover {transform: scale(1.02);}
+.Trending_img2 img:hover {transform: scale(1.02);}
+.Trending_img3 img:hover {transform: scale(1.02);}
+
+.Trending_product_name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    
+}
+
+.Trending_product_price {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 70%;
+    font-size: 0.9rem;
+}
+
+.Trending_btn {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: solid 1px black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 13rem;
+    transition: background .2s, color .2s;
+}
+
+.Trending_btn:hover { 
+    background: #111; 
+    color: #fff; 
+}

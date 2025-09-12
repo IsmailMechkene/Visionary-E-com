@@ -1,0 +1,25 @@
+
+
+.sec1 {
+    height: 70vh;
+    background-image: url(backgrounds/sec1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.sec1_container {
+    position: relative;
+    height: 100%;
+    padding-left: 3rem;
+    padding-top: 9.5rem;
+}
+
+.sec1_label {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20em;
+    color: rgba(255, 255, 255, 0.377);
+    letter-spacing: 3px;
+    line-height: 17rem;
+}
