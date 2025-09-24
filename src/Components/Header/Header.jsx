@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 import './header.css'
 
 function Header() {
@@ -33,11 +34,11 @@ function Header() {
             </div>
             <div className='header_div1'>
                 <ul className='header_ul'>
-                    <li><a href="#Home" className='header_link'><p>HOME</p></a></li>
-                    <li><a href="#Women" className='header_link'><p>WOMEN</p></a></li>
-                    <li><a href="#Men" className='header_link'><p>MEN</p></a></li>
-                    <li><a href="#About" className='header_link'><p>ABOUT US</p></a></li>
-                    <li><a href="#Contact" className='header_link'><p>CONTACT</p></a></li>
+                    <li><Link to="/" className='header_link'><p>HOME</p></Link></li>
+                    <li><Link to="/women" className='header_link'><p>WOMEN</p></Link></li>
+                    <li><Link to="/men" className='header_link'><p>MEN</p></Link></li>
+                    <li><Link to="/about" className='header_link'><p>ABOUT US</p></Link></li>
+                    <li><Link to="/contact" className='header_link'><p>CONTACT</p></Link></li>
                     <li>
                         <a href="#" className="cart_wrapper">
                             <img src="icons/cart.svg" alt="cart icon" className='header_img'/>
