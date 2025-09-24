@@ -2,7 +2,7 @@ import './Contact.css'
 
 function Contact() {
   return (
-    <section className="Contact">
+    <section className="Contact" id='Contact'>
       <div className="Contact_container">
         <div className="Contact_image">
           <img src="images/BestSeller.jpg" alt="Best Seller Glasses" />

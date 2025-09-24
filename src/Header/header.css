@@ -5,9 +5,14 @@
 *::after { box-sizing: border-box; }  
 
 .header {
-    position: fixed;
-    top: 0; left: 0; right: 0;          
-    z-index: 1000;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.hide {
+  transform: translateY(-100%);
 }
 
 .header_inner {
@@ -20,19 +25,7 @@
     background-color: rgba(255, 255, 255, 0.678);
 }
 
-
 main { padding-top: 6.5rem; }
-
-/*.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(0,0,0,0));
-    pointer-events: none;
-}*/
 
 .header_logo {
     position: relative;

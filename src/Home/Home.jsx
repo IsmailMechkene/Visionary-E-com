@@ -3,7 +3,7 @@ import './Home.css'
 
 function Home() {
     return (
-        <section className='home'>
+        <section className='home' id='Home'>
             <div className='home_container'>
                 <p className='home_tagline'>Vision Reimagined</p><br></br>
                 <p className='home_headline'>Shades</p>
